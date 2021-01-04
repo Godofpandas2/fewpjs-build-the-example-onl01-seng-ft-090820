@@ -9,7 +9,7 @@ const div = document.getElementById('modal')
 
 
 hearts.forEach(heart => {
-  heart.addEventListener('click', (e) => {
+  heart.addEventListener('click', () => {
     mimicServerCall()
     .then(resolve => {
       if (heart.innerHTML == EMPTY_HEART) {
